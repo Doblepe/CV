@@ -1,0 +1,162 @@
+* {
+  outline: none;
+}
+body {
+  margin: 0;
+  overflow-y: overlay;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+body ::-webkit-scrollbar-thumb{
+  background-color: hsla(0, 0%, 100%, 0.16);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0%, 100%, 0.1);
+}
+.btn {
+  border-radius: 50px;
+  padding:14px 0;
+  width: 160px;
+  cursor:pointer;
+  transition: 0.2s;
+  font-family: 'Courier New', Courier, monospace;
+}
+.btn:active{
+  transform: translateY(2px);
+}
+.primary-btn {
+  color: white;
+  border: 2px solid linen;
+  font-size: 12px;
+  background-color: #1f2235;
+}
+/* Scrolltop S */
+
+.scrolltop-mf {
+  position: relative;
+  display: none;
+}
+
+.scrolltop-mf span {
+  z-index: 999;
+  position: fixed;
+  width: 42px;
+  height: 42px;
+  background-color: #0078ff;
+  opacity: .7;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  top: auto;
+  left: auto;
+  right: 30px;
+  bottom: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* Back to top button */
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #0078ff;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  transition: 0.5s;
+  z-index: 11;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+  color: #fff;
+}
+/*
+ABOUT
+*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+.skill-mf span {
+  color: #4e4e4e;
+}
+
+.skill-mf .progress {
+  background-color: #cde1f8;
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #0078ff;
+}
+
+@media only screen and (max-whidth:414px) {
+  .primary-btn {
+    font-size: 13px;
+  }
+}
+.primary-btn:hover{
+  color: aliceblue;
+  border: 2px solid #ff5823;
+  background-color: #1f2235;
+}
+.highlighted-btn {
+  color: var(--white);
+  font-size: 12px;
+  background-color: #ff5823;
+}
+.highlighted-btn:hover {
+  color: white;
+  font-size: 12px;
+  background-color: #ff5823;
+}
+@media only screen and (max-whidth:414px) {
+  .highlighted-btn {
+    z-index: -900;
+  }
+}
+.red-border {
+  border: 1px solid var(--error-message) !important;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.8s ease;
+}
