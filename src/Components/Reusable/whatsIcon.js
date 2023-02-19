@@ -3,31 +3,18 @@ import styled from 'styled-components';
 import WhatsAppImagge from '../../assets/images/WhatsApp.svg.webp';
 
 const SectionTitleStyle = styled.div`
-
-  text-align: center;
-  display:flex;
-  p {
-    font-family: 'RobotoMono Regular';
-    font-size: 1.8rem;
-    line-height: 1.3em;
-    color: ${(props) => props.theme.text};
-  }
-    img {
-  width:60px;
-  height: 60px;
-  margin-left: 4em; 
-  }
-  a{
-    width:20px
-    font-size: 4em
-    outline:none
-    display: block;
-    color: ${(props) => props.theme.text};
+  img {
+  width:30px;
+  height: 30px;
+  margin: 20px 0 20px 0; 
   }
   @media only screen and (max-width: 768px) {
 #whats_link{
+  margin: 10px 0 20px 0; 
    position: absolute;
-   top: 1rem;
+   top: 0px;    
+   left: 20px;
+ 
 }
   }
 `;

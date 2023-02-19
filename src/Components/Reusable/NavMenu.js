@@ -9,8 +9,7 @@ const NavStyles = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  height: 8em;
-  padding: 1rem 0;
+  max-height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,6 +27,7 @@ const NavStyles = styled.nav`
     max-width: 1200px;
     width: 90%;
     text-align: center;
+    margin: auto;
     border: solid 2px ${(props) => props.theme.secondary};
     li {
       margin: 0 10px;
@@ -54,7 +54,6 @@ const NavStyles = styled.nav`
       color: ${(props) => props.theme.text};
     }
   }
-
   .mobile-menu-icon {
     position: absolute;
     color: ${(props) => props.theme.secondary};
@@ -76,18 +75,14 @@ const NavStyles = styled.nav`
   }
   .container button{
       font-family: 'RobotoMono Regular';
-      width: 5em;
-      border-radius: 20px;
-      padding: 1rem 2rem;
-      font-size: 2rem;
+      height: auto;
       color: ${(props) => props.theme.text};
       outline: none;
-     background-color: ${(props) => props.theme.secondary};
-      margin-left: 10em;
+      background-color: ${(props) => props.theme.secondary};
       /* background-color:  #BCB4B4; */
-      margin-left: 5em;
     }
   @media only screen and (max-width: 768px) {
+    max-height: 20px;
     padding: 0;
     .hide-item {
       transform: translateY(calc(-100% - var(--top)));

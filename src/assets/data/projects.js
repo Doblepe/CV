@@ -4,6 +4,8 @@ import portfolio from '../images/portafolio.png';
 import Gatsby_icon from '../images/Gatsby.png';
 import Cicon from '../images/C.png';
 import PyIcon from '../images/py.png';
+import StreamlitIcon from '../images/streamlit.png';
+import PyWebIOIcon from '../images/PyWebIO.png';
 const projects = [
   {
     name: 'Tu Tienda',
@@ -43,6 +45,21 @@ const projects = [
     git: 'https://github.com/Doblepe/Portfolio/tree/master',
     link: "",
   },
+  {
+    name: 'Price Tracker',
+    desc: 'Made with Python and Streamlit',
+    img: StreamlitIcon,
+    git: 'https://github.com/Doblepe/Lesson-13.-Streamlit',
+    link: "https://doblepe-lesson-13--streamlit-victor-0jv1v7.streamlit.app/",
+  },
+  {
+    name: 'IBM Calculator',
+    desc: 'Made with Python and PyWebIO',
+    img: PyWebIOIcon,
+    git: 'https://github.com/Doblepe/Lesson-14.-PyWebIO',
+    link: "",
+  },
+
 
 ];
 
