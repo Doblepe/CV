@@ -8,7 +8,7 @@ const SectionTitleStyle = styled.div`
   display:flex;
   p {
     font-family: 'RobotoMono Regular';
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 1.3em;
     color: ${(props) => props.theme.text};
   }
@@ -19,15 +19,18 @@ const SectionTitleStyle = styled.div`
   }
   a{
     width:20px
-    font-size: 1.5rem
+    font-size: 4em
     outline:none
     display: block;
     color: ${(props) => props.theme.text};
   }
   @media only screen and (max-width: 768px) {
 #whats_link{
+  margin: 10px 0 20px 0; 
    position: absolute;
-   top: 1rem;
+   top: 0px;    
+   left: 20px;
+ 
 }
   a{
     width:20px

@@ -7,7 +7,6 @@ import AboutImg from '../assets/images/about_pic.jpg';
 import ContactBanner from '../Components/Contact/ContactBanner';
 
 const AboutPageStyles = styled.div`
-  padding: 20rem 0 10rem 0;
   background-color: ${(props) =>
     props.theme.bg
   };
@@ -142,6 +141,7 @@ const AboutPageStyles = styled.div`
     gap: 1rem;
   }
    @media only screen and (max-width: 1100px) {
+
     .top-section {
       flex-direction: column;
       gap: 5rem;
@@ -177,9 +177,10 @@ const AboutPageStyles = styled.div`
 }
   @media only screen and (max-width: 768px) {
     font-size: 1.4rem;
+    padding: 1rem 0;
       .right {
-    margin-top: 1em;
     flex-wrap: wrap;
+  
    }
      img{
       max-height:390px;    }
