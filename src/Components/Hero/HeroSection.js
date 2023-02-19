@@ -30,7 +30,7 @@ z-index: 1;
   overflow: hidden;
 }
 .VideoBg{
-  width:100%;
+ width:100%;
  height: 100%;
  -o-object-fit: cover;
  object-fit: cover;

@@ -8,7 +8,7 @@ const SectionTitleStyle = styled.div`
   display:flex;
   p {
     font-family: 'RobotoMono Regular';
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.3em;
     color: ${(props) => props.theme.text};
   }
@@ -19,7 +19,7 @@ const SectionTitleStyle = styled.div`
   }
   a{
     width:20px
-    font-size: 4em
+    font-size: 1.5rem
     outline:none
     display: block;
     color: ${(props) => props.theme.text};
@@ -29,6 +29,23 @@ const SectionTitleStyle = styled.div`
    position: absolute;
    top: 1rem;
 }
+  a{
+    width:20px
+    font-size: 1rem
+    outline:none
+    display: block;
+    color: ${(props) => props.theme.text};
+  }
+    p {
+    font-family: 'RobotoMono Regular';
+    font-size: 1rem;
+    line-height: 1.3em;
+    color: ${(props) => props.theme.text};
+  }
+      img {
+  margin-left: 0;
+  
+  }
   }
 `;
 

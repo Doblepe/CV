@@ -7,7 +7,7 @@ const FooterStyle = styled.div`
   background-color: ${(props) =>
     props.theme.bg
   };
-  padding-top: 10rem;
+  padding-top: 2rem;
   color: ${(props) =>
     props.theme.text
   };
@@ -25,7 +25,7 @@ const FooterStyle = styled.div`
     flex: 1;
   }
   .footer__col1__title {
-    font-size: 3.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: ${(props) => props.theme.secondary};
   }
@@ -59,6 +59,11 @@ const FooterStyle = styled.div`
         }
       }
     }
+    .footer__col1__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: ${(props) => props.theme.secondary};
+  }
   }
 `;
 

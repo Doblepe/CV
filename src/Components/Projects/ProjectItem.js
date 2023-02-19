@@ -8,6 +8,7 @@ const ProjectItemStyles = styled.div`
   border: solid 3px ${(props) =>
     props.theme.secondary
   };
+  width: auto;
   padding: 1.5rem;
   background-color: ${(props) =>
     props.theme.bg_2
@@ -35,12 +36,12 @@ const ProjectItemStyles = styled.div`
     border-radius: 12px;
   }
   .projectItem__title {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: ${(props) => props.theme.secondary};
     font-weight: 500;
   }
   .projectItem__desc {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
   }
@@ -54,8 +55,13 @@ const ProjectItemStyles = styled.div`
   @media only screen and (max-width: 768px) {
     .projectItem__img {
       height: 350px;
-      font-size:1.4rem;
+      font-size:1rem;
     }
+    .projectItem__desc {
+    font-size: 1rem;
+    font-family: 'RobotoMono Regular';
+    margin-top: 1rem;
+  }
   }
 `;
 export default function ProjectItem({

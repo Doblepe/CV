@@ -25,8 +25,7 @@ const AboutPageStyles = styled.div`
   gap: 2rem;
 }
  p{ 
-  margin:2rem;
-  padding:1.2rem
+  padding:1rem
   font-size: 1.8rem;
   line-height: 1.3em;}
 
@@ -73,6 +72,7 @@ const AboutPageStyles = styled.div`
   .right {
     img {border: 2px solid ${(props) => props.theme.secondary};
     }
+    margin-top: 10em;
   }
   .about__info__items {
     margin-top: 5rem;
@@ -110,11 +110,19 @@ const AboutPageStyles = styled.div`
   };
    text-align:center;
   }
+    h2{
+  font-size: 3rem;
+  border-bottom: 1px solid ${(props) => props.theme.text};
+  font-family: bold;
+  padding: 2rem 0 1rem 0;
+  color: ${(props) => props.theme.text};
+  text-align:center;
+    }
   .icons_box{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    padding:3rem 
+    padding:1rem 
   }
   .skills_article{
     justify-content:center;
@@ -128,7 +136,11 @@ const AboutPageStyles = styled.div`
   padding: 1rem;
   width:125px;
   }
-
+  .experience_box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
    @media only screen and (max-width: 1100px) {
     .top-section {
       flex-direction: column;
@@ -140,12 +152,18 @@ const AboutPageStyles = styled.div`
     flex-wrap: wrap;
     gap: 1rem;
   }
+  .experience_box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
   .right {
+    margin-top: 1em;
     flex-wrap: wrap;
    }img{
       max-height:400px;    }
      h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 2rem 0 1rem 0;
   color: ${(props) =>
     props.theme.text
@@ -159,15 +177,20 @@ const AboutPageStyles = styled.div`
 }
   @media only screen and (max-width: 768px) {
     font-size: 1.4rem;
-    padding: 1rem 0;
       .right {
+    margin-top: 1em;
     flex-wrap: wrap;
-  
    }
      img{
       max-height:390px;    }
   }
     .icons_box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .experience_box{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -183,14 +206,21 @@ const AboutPageStyles = styled.div`
   color: ${(props) =>
     props.theme.text
   };
+   h2{
+   font-size: 3rem;
+   border-bottom: 1px solid ${(props) => props.theme.text};
+  font-family: bold;
+  padding: 2rem 0 1rem 0;
+  color: ${(props) => props.theme.text};
+    }
     .about__subheading {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
     .about__heading {
-      font-size: 2.8rem;
+      font-size: 2rem;
     }
     .about__info__heading {
-      font-size: 5rem;
+      font-size: 3rem;
       text-align:center;
     }
     .about__info__item i{
@@ -217,29 +247,44 @@ const AboutPageStyles = styled.div`
 }
   @media only screen and (max-width: 450px) {
   .about__info__heading {
-      font-size: 3.5rem;
+      font-size: 2.5rem,;
        text-align:center;
     }
      .about__info__item i{
    font-size: 3.5rem;
   }
     h3 {
-  font-size: 2.8rem;
+  font-size: 2rem;
+  font-family: bold;
+  padding: 2rem 0 1rem 0;
+  color: ${(props) => props.theme.text};
+    }
+    h2{
+   font-size: 2.5rem;
   font-family: bold;
   padding: 2rem 0 1rem 0;
   color: ${(props) => props.theme.text};
     }
     .skills_article{
-    justify-content:center;
-    align-items: center;
-   display: flex;
-   flex-flow: wrap;
-   border: solid 2px ${(props) =>
-    props.theme.secondary
+  justify-content:center;
+  align-items: center;
+  display: flex;
+  flex-flow: wrap;
+  border: solid 2px ${(props) =>
+  props.theme.secondary
   };
   margin-top:1em;
   padding: 1rem;
   width:75px;
+  }
+  p{
+    font-size: 1rem;
+    margin: none;
+  }
+  .experience_box{
+    display: block;
+    margin: auto;
+
   }
   }`;
 
@@ -258,8 +303,6 @@ export default function About(props) {
                 <PText>
                   My name is Víctor and after the becoming of the covid-19 pandemy I decided to change my professional career. I've worked in different jobs, but I couldn't find that one which would fit in with my vital objectives until I found the wonderful world of programming.  Digital projects and programming have changed my perspective of life, so I am looking for new profesional opportunities in the Web Development universe.
                   <br />
-                  <br />
-                  Besides my knowledge on coding, I have several years of experience in journalism. Where I gained so many soft skills on comunication and working and cooperating in team.
                 </PText>
               </div>
               {/*  <Button btnText="Download CV" btnLink="#" /> */}
@@ -277,10 +320,11 @@ export default function About(props) {
               <p> Developing C# and .NET course on <a href='https://www.linkedin.com/search/results/all/?keywords=C2B%20-%20Campus%20To%20Business&sid=zVd' rel='noreferrer' target='_blank'>C2B - Camopus to buisness</a>.</p>
               <p> Also learning Máster de Programación Avanzada en Python para Big Data, Hacking y Machine Learning with <a href='https://www.linkedin.com/school/eip-international-business-school/' rel='noreferrer' target='_blank'>EIP International Business School</a>.</p>
             </div>
+
             <div className="about__info__item">
               <h1 className="about__info__heading">My Skills</h1>
-              <p>I've used so many languages and frameworks, ask me about wich one you are interested</p>
-              <h3>FrontEnd</h3>
+              <p>I've worked with so many languages and frameworks, ask me about wich one you are interested</p>
+              <h3>Technologies</h3>
               <div className="icons_box">
                 <article className='skills_article'>
                   <i class="devicon-html5-plain"></i>
@@ -307,21 +351,24 @@ export default function About(props) {
                   <p>Bootstrap</p>
                 </article>    
                 <article className='skills_article'>
-                  <i class="devicon-python-plain"></i>
-                  <p>Python</p>
-                </article>
-
-              </div>
-              <h3>BackEnd</h3>
-         
-              <div className="icons_box">
-                <article className='skills_article'>
                   <i class="devicon-nodejs-plain-wordmark"></i>
                   <p>Node JS</p>
                 </article>
                 <article className='skills_article'>
                   <i class="devicon-mongodb-plain-wordmark"></i>
                   <p>Mongo DB</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-mysql-plain-wordmark"></i>
+                  <p>MYSQL</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-python-plain"></i>
+                  <p>Python</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-django-plain"></i>
+                  <p>Django</p>
                 </article>
                 <article className='skills_article'>
                   <i class="devicon-php-plain"></i>
@@ -340,14 +387,9 @@ export default function About(props) {
                   <p>C#</p>
                 </article>
                 <article className='skills_article'>
-                  <i class="devicon-mysql-plain-wordmark"></i>
-                  <p>MYSQL</p>
-                </article>
-                <article className='skills_article'>
                   <i class="devicon-dotnetcore-plain"></i>
                   <p>.NET</p>
                 </article>
-
               </div>
               <h3>Others</h3>
               <div className="icons_box">
@@ -376,12 +418,24 @@ export default function About(props) {
                   <p>Linux</p>
                 </article>
               </div>
-              <h1 className="about__info__heading">Experience</h1>
+              <h2 >My favs: </h2>
               <div className="icons_box">
-              
-                <p>On the IT world I worked for three months developing at <a href="http://jamenet.eus/" rel='noreferrer' target='_blank'>Jamenet Sollutions.</a></p>
-                <p>Since june of 2022 i'm developing with JS with Bilbomática and The WhiteTeam</p>
-                <p>I've worked on many different jobs, such as a Journalist, as a comercial, as administrative and also as a Lifeguard.</p>
+              <article className='skills_article'>
+                <i class="devicon-javascript-plain"></i>
+                <p>JS</p>
+              </article>
+              <article className='skills_article'>
+                <i class="devicon-python-plain"></i>
+                <p>Python</p>
+              </article>
+              </div>
+            </div>
+              <div className="about__info__item">
+              <h1 className="about__info__heading">Experience</h1>
+              <div className="experience_box">
+                <p>On the IT world I worked for three months coding REACT && PHP at <a href="http://jamenet.eus/" rel='noreferrer' target='_blank'>Jamenet Sollutions.</a></p>
+                <p>Since june of 2022 i'm coding with JS with Bilbomática and The WhiteTeam developing this app <a href="https://www.geo.euskadi.eus/geobisorea" rel='noreferrer' target='_blank'> Visor Geoeuskadi</a> </p>
+                <p>I've worked on many different jobs, such as a Journalist, as a comercial, as administrative and also as a Lifeguard. Thath jobs let me gain so many soft skills like efficient comunication, emotional intelligence and team working. </p>
               </div>
             </div>
           </div>

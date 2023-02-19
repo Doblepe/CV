@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const ColStyle = styled.div`
   .heading {
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     color: ${(props) => props.theme.secondary}
   }
@@ -12,7 +12,7 @@ const ColStyle = styled.div`
     margin-bottom: 1rem;
   }
   a {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color:${(props) =>
     props.theme.text
   };

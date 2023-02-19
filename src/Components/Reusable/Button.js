@@ -7,7 +7,7 @@ const ButtonStyle = styled.div`
   .button {
     font-size: 1.2rem;
     background-color: ${(props) => props.theme.bg_2};
-    padding: 0.7em 2em;
+    padding: 0.7rem;
     border: 2px solid var(--gray-1);
     border-radius: 8px;
     display: inline-block;
@@ -15,7 +15,7 @@ const ButtonStyle = styled.div`
   }
 @media only screen and(max - width: 768px) {
     .button {
-    font - size: 1.8rem;
+    font - size: 1rem;
   }
 }
 `;

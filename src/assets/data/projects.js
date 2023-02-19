@@ -4,11 +4,11 @@ import portfolio from '../images/portafolio.png';
 import Gatsby_icon from '../images/Gatsby.png';
 import Cicon from '../images/C.png';
 import PyIcon from '../images/py.png';
+import Django_API_REST_FRAMEWORK from '../images/django_api_rest_framework.png'
 const projects = [
   {
     name: 'Tu Tienda',
-    desc:
-      'An E-comerce full stack developed on the MERN Stack',
+    desc:'My first app, an E-comerce full stack developed on the MERN Stack',
     img: tutienda,
     git: 'https://github.com/Doblepe/La-Tienda',
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:6831484833517080576/',
@@ -40,9 +40,17 @@ const projects = [
     name: 'Portafolio',
     desc: 'This is the code for actual page.',
     img: portfolio,
-    git: 'https://github.com/Doblepe/Portfolio/tree/master',
+    git: 'https://github.com/Doblepe/CV',
     link: "",
   },
+  {
+    name: 'Django_API_REST_',
+    desc: 'This is the code for a simple Django_API_REST_framework.',
+    img: Django_API_REST_FRAMEWORK,
+    git: 'https://github.com/Doblepe/Django_API_REST',
+    link: "",
+  },
+
 
 ];
 

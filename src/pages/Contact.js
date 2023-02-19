@@ -14,25 +14,40 @@ export default function Contact() {
   padding: 10rem 0;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
-        a {
+   a {
       display: inline-block;
       font-family: 'RobotoMono Regular';
-      font-size: 2rem;
+      font-size: 1rem;
       color: ${(props) => props.theme.text};
       outline: none;
         }
    p{
-    font-size: 2rem;
+    font-size: 1rem;
    } 
    ul {
         border: solid 2px ${(props) => props.theme.secondary};
-        width: fit-width;
         justify-content: space-between;
         align-items:center;
-
+        width: fit-content;
    }   
    li{
-      font-size: 2rem;
+      font-size: 1.5rem;
+      width: fit-content;
+      padding: 1rem;
+      margin: 0 10px;
+      display: block;
+      border-radius: 8px;
+      transition: 0.3s ease background-color;
+      &:hover {
+        background-color: ${(props) => props.theme.secondary};
+      }
+   } 
+     @media only screen and (max-width: 768px) {
+  p{
+    font-size: 1rem;
+   } 
+      li{
+      font-size: 1rem;
       padding: 1rem;
       margin: 0 10px;
       display: inline-block;
@@ -42,6 +57,14 @@ export default function Contact() {
         background-color: ${(props) => props.theme.secondary};
       }
    } 
+      a {
+      display: inline-block;
+      font-family: 'RobotoMono Regular';
+      font-size: 1rem;
+      color: ${(props) => props.theme.text};
+      outline: none;
+        }
+  }
 `
   return (
     <ContactSectionStyle>

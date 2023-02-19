@@ -18,7 +18,6 @@ const MapStyles = styled.div`
     position: absolute;
     right: 10%;
     bottom: 10%;
-    padding: 2rem;
     background-color: ${(props) => props.theme.secondary};
     opacity:90%;
     width: 100%;
@@ -26,12 +25,12 @@ const MapStyles = styled.div`
     border-radius: 12px;
   }
   .map__card__heading {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
   .map__card__link {
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 1rem;
     margin-top: 3rem;
     text-decoration: underline;
     color: white;

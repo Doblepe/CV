@@ -26,7 +26,7 @@ const ProjectStyle = styled.div`
   }
   .projects__searchBar input {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0.8rem;
     border-radius: 6px;
     outline: none;

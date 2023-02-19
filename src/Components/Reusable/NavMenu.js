@@ -9,8 +9,8 @@ const NavStyles = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  height: 8em;
-  padding: 1rem 0;
+  height:auto;
+  padding: 1rem 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,7 +20,7 @@ const NavStyles = styled.nav`
   p{
     margin-left: 10px;
     color: ${(props) => props.theme.text};
-    font-size: 2rem
+    font-size: 1.5rem
   }
   ul {
     align-items: center;
@@ -42,7 +42,7 @@ const NavStyles = styled.nav`
       display: inline-block;
       font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: ${(props) => props.theme.text};
       outline: none;
     }
@@ -59,7 +59,7 @@ const NavStyles = styled.nav`
     position: absolute;
     color: ${(props) => props.theme.secondary};
     right: 1rem;
-    top: 1rem;
+    top: 2rem;
     width: 4rem;
     cursor: pointer;
     display: none;
@@ -72,21 +72,25 @@ const NavStyles = styled.nav`
     display: none;
   }
   .container {
+    background-color: ${(props) =>
+    props.theme.bg_2}
+    margin: auto;
     display:flex;
   }
   .container button{
-      font-family: 'RobotoMono Regular';
-      width: 5em;
-      border-radius: 20px;
-      padding: 1rem 2rem;
-      font-size: 2rem;
+    font-family: 'RobotoMono Regular';
+    width: 5em;
+    border-radius: 20px;
+    padding: 1em 1em;
+    font-size: 1rem;
       color: ${(props) => props.theme.text};
       outline: none;
      background-color: ${(props) => props.theme.secondary};
-      margin-left: 10em;
       /* background-color:  #BCB4B4; */
-      margin-left: 5em;
+     margin-left: 2em;
     }
+
+    
   @media only screen and (max-width: 768px) {
     padding: 0;
     .hide-item {
@@ -121,6 +125,11 @@ const NavStyles = styled.nav`
         margin-bottom: 1rem;
       }
     }
+      p{
+    margin-left: 10px;
+    color: ${(props) => props.theme.text};
+    font-size: 1rem
+  }
     #chat_txt{
       display: none
     }
