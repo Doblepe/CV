@@ -4,6 +4,10 @@ import portfolio from '../images/portafolio.png';
 import Gatsby_icon from '../images/Gatsby.png';
 import Cicon from '../images/C.png';
 import PyIcon from '../images/py.png';
+import PyWebIOIcon from '../images/PyWebIO.png';
+import StreamlitIcon from '../images/streamlit.png';
+import Django_API_REST_FRAMEWORK from '../images/django_api_rest_framework.png'
+
 const projects = [
   {
     name: 'Tu Tienda',
