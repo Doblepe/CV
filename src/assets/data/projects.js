@@ -26,8 +26,7 @@ const projects = [
   },
   {
     name: "Producst web form",
-    desc:
-      'This is some code I wrote with C# and .NET',
+    desc: 'This is some code I wrote with C# and .NET',
     img: Cicon,
     git: 'https://github.com/Doblepe/ProductosWebForms',
     link: '',

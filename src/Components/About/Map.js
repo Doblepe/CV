@@ -8,7 +8,6 @@ const MapStyles = styled.div`
   background-position: center;
   background-size: cover;
   min-height: 400px;
-  margin: 2rem;
   .container {
     position: relative;
     min-height: 400px;
@@ -16,22 +15,22 @@ const MapStyles = styled.div`
   }
   .map__card {
     position: absolute;
-    right: 10%;
     bottom: 10%;
     background-color: ${(props) => props.theme.secondary};
     opacity:90%;
     width: 100%;
     max-width: 300px;
+    padding: 10px;
     border-radius: 12px;
+    margin:0;
   }
   .map__card__heading {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 20px;
   }
   .map__card__link {
     display: inline-block;
-    font-size: 1rem;
-    margin-top: 3rem;
+    font-size: 15px;
+    margin-top: 25px;
     text-decoration: underline;
     color: white;
   }
@@ -39,10 +38,6 @@ const MapStyles = styled.div`
     background-position: 80% center;
   }
   @media only screen and (max-width: 400px) {
-    .map__card {
-      max-width: none;
-      right: auto;
-    }
   }
 `;
 

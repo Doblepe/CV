@@ -33,7 +33,7 @@ export default function Contact() {
    li{
       font-size: 1.5rem;
       width: fit-content;
-      padding: 1rem;
+      padding: 15px;
       margin: 0 10px;
       display: block;
       border-radius: 8px;
