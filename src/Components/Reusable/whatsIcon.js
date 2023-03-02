@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import WhatsAppImagge from '../../assets/images/WhatsApp.svg.webp';
 
 const SectionTitleStyle = styled.div`
-
   text-align: center;
   display:flex;
   p {
@@ -30,7 +29,6 @@ const SectionTitleStyle = styled.div`
    position: absolute;
    top: 0px;    
    left: 20px;
- 
 }
   a{
     width:20px
@@ -46,7 +44,7 @@ const SectionTitleStyle = styled.div`
     color: ${(props) => props.theme.text};
   }
       img {
-  margin-left: 0;
+  margin-left: auto;
   
   }
   }

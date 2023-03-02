@@ -13,8 +13,8 @@ const AboutPageStyles = styled.div`
   color: ${(props) =>
     props.theme.text
   };
-  margin: 0 auto;
-  font-size: 1.8rem;
+  padding: 80px 0;
+  font-size: 16px;
   line-height: 1.3em;
   font-family: 'Raleway', sans-serif;
  .top-section {
@@ -23,11 +23,6 @@ const AboutPageStyles = styled.div`
   justify-content: center;
   gap: 2rem;
 }
- p{ 
-  padding:1rem
-  font-size: 1.8rem;
-  line-height: 1.3em;}
-
   a {
     color: ${(props) =>
     props.theme.text
@@ -36,9 +31,8 @@ const AboutPageStyles = styled.div`
     border-bottom-width: 1px solid;
   }
   .education_section{
-    font-size: 2rem;
     gap:2rem;
-    font-size: 1.8rem;
+    font-size: 16px;
   }
   .left {
     flex: 3;
@@ -47,14 +41,14 @@ const AboutPageStyles = styled.div`
     flex: 2;
   }
   .about__subheading {
-    font-size: 2.2rem;
+    font-size: 22px;
     margin-bottom: 2rem;
     span {
       background-color:${(props) =>
     props.theme.secondary
   };
-      padding: 0.5rem;
-      border-radius: 8px;
+      padding: 15px;
+      border-radius: 20px;
     }
   }
   .about__heading {
@@ -74,7 +68,7 @@ const AboutPageStyles = styled.div`
     margin-top: 10em;
   }
   .about__info__items {
-    margin-top: 5rem;
+    margin-top: 30px;
     background-color: ${(props) =>
     props.theme.bg_2
   };
@@ -85,6 +79,7 @@ const AboutPageStyles = styled.div`
   }
   .about__info__item {
     margin-bottom: 5rem;
+    padding: auto;
   }
   .about__info__item i{
    font-size: 5rem;
@@ -92,7 +87,7 @@ const AboutPageStyles = styled.div`
   .about__info__heading {
   text-transform: uppercase;  
   font-size: 2.6rem;
-  padding: 2rem 0 1rem 0;
+  padding: 10px 0 10px 0px;
   color: ${(props) =>
     props.theme.secondary
   };
@@ -100,6 +95,7 @@ const AboutPageStyles = styled.div`
   border-bottom: 2px solid ${(props) =>
     props.theme.secondary
   };
+  
   }
    h3 {
   font-size: 2.4rem;
@@ -123,24 +119,40 @@ const AboutPageStyles = styled.div`
     gap: 1rem;
     padding:1rem 
   }
+  .fav_box{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around
+  }
   .skills_article{
     justify-content:center;
     align-items: center;
    display: flex;
-   flex-flow: wrap;
+   flex-direction: column;
    border: solid 2px ${(props) =>
     props.theme.secondary
   };
-  margin-top:1em;
-  padding: 1rem;
+  margin-top:16px;
+  padding: 10px 0;
   width:125px;
   }
   .experience_box{
+    margin: 20px 0;
+    padding: auto;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-direction: column;
   }
+  p {
+    padding:10px;
+    font-size: 1.8rem
+   }
    @media only screen and (max-width: 1100px) {
+    padding: 125px 0;
+    line-height: 1.3em;
+   p {
+    padding:10px
+    font-size: 1.5rem
+   }
 
     .top-section {
       flex-direction: column;
@@ -174,13 +186,15 @@ const AboutPageStyles = styled.div`
   .aboutSection__right {
     flex: 3;
   }
+  
+
 }
   @media only screen and (max-width: 768px) {
-    font-size: 1.4rem;
-    padding: 1rem 0;
+   padding: 120px 0;
+  font-size: 16px;
+  line-height: 1.3em;
       .right {
     flex-wrap: wrap;
-  
    }
      img{
       max-height:390px;    }
@@ -198,8 +212,12 @@ const AboutPageStyles = styled.div`
   }
     .top-section {
       flex-direction: column;
-      gap: 5rem;
+      gap:1rem;
     }
+    p {
+    padding:10px;
+    font-size: 1.5rem
+   }
   }
   h3 {
   font-size: 1.8rem;
@@ -247,6 +265,11 @@ const AboutPageStyles = styled.div`
   }
 }
   @media only screen and (max-width: 450px) {
+    padding: 120px 0;
+   p {
+    padding:10px;
+    font-size: 1.5rem
+   }
   .about__info__heading {
       font-size: 2.5rem,;
        text-align:center;
@@ -276,11 +299,12 @@ const AboutPageStyles = styled.div`
   };
   margin-top:1em;
   padding: 1rem;
-  width:75px;
+  width:65px;
   }
   p{
-    font-size: 1rem;
-    margin: none;
+    padding:10px;
+    font-size: 1.5rem;
+    margin: auto;
   }
   .experience_box{
     display: block;
@@ -315,11 +339,11 @@ export default function About(props) {
           <div className="about__info__items">
             <div className="about__info__item">
               <h1 className="about__info__heading">Education</h1>
-              <p>I've studied Jornalism at the UPV/EHU and also a Master degree on Multimedia Journalism.</p>
-              <p>JavaScript Full Stack Developer course on <a href="https://www.linkedin.com/school/code4jobsbbkbootcamp/" rel='noreferrer' target='_blank'>BBK Bootcamp.</a></p>
-              <p>Desarrollo de aplicaciones con Angular on <a href="https://www.linkedin.com/company/ipartek/" rel='noreferrer' target='_blank'> Ipartek.</a></p>
-              <p> Developing C# and .NET course on <a href='https://www.linkedin.com/search/results/all/?keywords=C2B%20-%20Campus%20To%20Business&sid=zVd' rel='noreferrer' target='_blank'>C2B - Camopus to buisness</a>.</p>
-              <p> Also learning Máster de Programación Avanzada en Python para Big Data, Hacking y Machine Learning with <a href='https://www.linkedin.com/school/eip-international-business-school/' rel='noreferrer' target='_blank'>EIP International Business School</a>.</p>
+              <p>- I've studied Jornalism at the UPV/EHU and also a Master degree on Multimedia Journalism.</p>
+              <p>- JavaScript Full Stack Developer course on <a href="https://www.linkedin.com/school/code4jobsbbkbootcamp/" rel='noreferrer' target='_blank'>BBK Bootcamp.</a></p>
+              <p>- Desarrollo de aplicaciones con Angular on <a href="https://www.linkedin.com/company/ipartek/" rel='noreferrer' target='_blank'> Ipartek.</a></p>
+              <p>-  Developing C# and .NET course on <a href='https://www.linkedin.com/search/results/all/?keywords=C2B%20-%20Campus%20To%20Business&sid=zVd' rel='noreferrer' target='_blank'>C2B - Camopus to buisness</a>.</p>
+              <p>- Also learning Máster de Programación Avanzada en Python para Big Data, Hacking y Machine Learning with <a href='https://www.linkedin.com/school/eip-international-business-school/' rel='noreferrer' target='_blank'>EIP International Business School</a>.</p>
             </div>
 
             <div className="about__info__item">
@@ -420,7 +444,7 @@ export default function About(props) {
                 </article>
               </div>
               <h2 >My favs: </h2>
-              <div className="icons_box">
+              <div className="fav_box">
               <article className='skills_article'>
                 <i class="devicon-javascript-plain"></i>
                 <p>JS</p>
@@ -434,9 +458,9 @@ export default function About(props) {
               <div className="about__info__item">
               <h1 className="about__info__heading">Experience</h1>
               <div className="experience_box">
-                <p>On the IT world I worked for three months coding REACT && PHP at <a href="http://jamenet.eus/" rel='noreferrer' target='_blank'>Jamenet Sollutions.</a></p>
-                <p>Since june of 2022 i'm coding with JS with Bilbomática and The WhiteTeam developing this app <a href="https://www.geo.euskadi.eus/geobisorea" rel='noreferrer' target='_blank'> Visor Geoeuskadi</a> </p>
-                <p>I've worked on many different jobs, such as a Journalist, as a comercial, as administrative and also as a Lifeguard. Thath jobs let me gain so many soft skills like efficient comunication, emotional intelligence and team working. </p>
+                <p>- On the IT world I worked for three months coding REACT && PHP at <a href="http://jamenet.eus/" rel='noreferrer' target='_blank'>Jamenet Sollutions.</a></p>
+                <p>- Since june of 2022 i'm coding with JS with Bilbomática and The WhiteTeam developing this app <a href="https://www.geo.euskadi.eus/geobisorea" rel='noreferrer' target='_blank'> Visor Geoeuskadi</a> </p>
+                <p>- I've worked on many different jobs, such as a Journalist, as a comercial, as administrative and also as a Lifeguard. Thath jobs let me gain so many soft skills like efficient comunication, emotional intelligence and team working. </p>
               </div>
             </div>
           </div>
@@ -447,202 +471,3 @@ export default function About(props) {
     </>
   );
 }
-
-
-
-
-/* import React from 'react'
-
-import Map from '../Components/About/Map'
-import styled from 'styled-components'
-import AboutImg from '../assets/images/IMG_8178-min.jpg'
-import SectionTitle from '../Components/Reusable/SectionTitle'
-import PText from '../Components/Reusable/PText'
-import ContactBanner from '../../../../../clone/src/components/ContactBanner'
-const AboutPageStyles = styled.div`
-background-color: var(--dark-bg);
-color: white;
-padding: 10rem 0;
-font-family: 'Raleway', sans-serif;
-font-weight: bold;
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-.top-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
-a{
-  color: white;
-}
-p{font-family: 'Raleway', sans-serif;
-font-size: 1.8rem;
-padding: 2rem 0 0 0;
-}
-.left {
-  flex: 3;
-}
-.right {
-  flex: 2;
-}
-.about__subheading {
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
-  span {
-    background-color: var(--green);
-    padding: 0.5rem;
-    border-radius: 8px;
-    opacity: inherit;
-    color: white;
-  }
-}
-.about__heading {
-  font-size: 3.6rem;
-  margin-bottom: 3rem;
-  color: var(--green)
-}
-.about__info {
-  margin-bottom: 4rem;
-  .para {
-    max-width: 100%;
-  }
-}
-.right {
-  img {
-    border: 2px solid var(--green);
-  }
-}
-.about__info__items {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  background-color: var(--deep-dark); 
-  margin-top: 5rem;
-  padding: 5rem;
-  margin-bottom: 5rem;
-  border: solid var(--green);
-i{
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-}
-h1{
-  align-items: center;
-}
-h3{
-  padding: 2rem 0 0 0;
-  font-size: 3rem;
-  justify-content: center;
-  font-style: bold;
-}
-}
-.about__info__item {
-  margin-bottom: 5rem;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 1rem 2rem 2rem;
-  border-bottom: 2px solid var(--green);
-}
-.about__info__heading {
-  font-size: 2.6rem;
-  padding: 2rem 0 2rem 0;
-  color: var(--green);
-  border-bottom: 2px solid var(--green);
-  span {
-    background-color: var(--green);
-    font-family: 'Raleway', sans-serif;
-    padding: 0.5rem;
-    border-radius: 8px;
-    opacity: inherit;
-    color: white;
-    margin-bottom: 2rem;
-  }
-}
-@media only screen and (max-width: 950px) {
-  .aboutSection__left {
-    flex: 4;
-  }
-  .aboutSection__right {
-    flex: 3;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .aboutSection__left,
-  .aboutSection__right {
-    width: 100%;
-  }
-  .aboutSection__right {
-    margin-top: 3rem;
-  }
-  .section-title {
-    text-align: center;
-  }
-  .para {
-    margin: 0 auto;
-    margin-top: 2rem;
-  }
-  .aboutSection__buttons {
-    flex-direction: column;
-    gap: 0rem;
-    .button-wrapper,
-    a {
-      width: 100%;
-      text-align: center;
-    }
-  }
-}
-`;
-export default function About() {
- 
-  return (
-    <AboutPageStyles>
-      <SectionTitle heading="About" subheading="" />
-      <div className="container">
-        <div className="top-section">
-          <div className="left">
-            <p className="about__subheading">
-              Hi, I am <span>Víctor Pérez</span>
-            </p>
-            <h2 className="about__heading">A Full Stack JR JavaScript Developer</h2>
-            <div className="about__info">
-              <PText>
-                My name is Víctor and after the becoming of the pandemy I decided to change my professional career. I've worked in different jobs, but I couldn't find that one which would fit with my vital features until I found out the wonderful world of programming. Development and programming have changed the way i see the world, so I am looking for my first profesional opportunity in the Web Development universe.
-                <br />
-                <br />
-                My vision is to make the world a better place. Nowadays almost everything is becoming better than ever. It is time for us to create better stuff that helps the world to become a better place.
-              </PText>
-            </div>
-          {/*   <Button variant="success" download='#'>Descarga CV</Button> 
-          </div>
-          <div className="right">
-            <img src={AboutImg} alt="me" />
-          </div>
-        </div>
-     {/* ---------------------   ABOUT BOX -----------------------------
-        <div className="about__info__items">
-          <div className="about__info__item">
-            <h1 className="about__info__heading">Education</h1>
-            
-            <p>JavaScript Full Stack Developer course on <a href="http://cursos.bbkbootcamp.com/?gclid=CjwKCAjwn8SLBhAyEiwAHNTJbQcvt29TMEJ8eHRgVsS7aQOgNgs-KxJCEIV_bJcLF7qoeNsuOBDUDhoCwIUQAvD_BwE" rel='noreferrer' target='_blank'>BBK Bootcamp.</a>
-            <br />
-            Desarrollo de aplicaciones con Angular on <a href="https://formacion.ipartek.com/"> Ipartek.</a>
-            <br />
-            Also autodidactic learning.</p>
-    
-          </div>
-          <div className="about__info__item">
-            <div className="inside_items">
-            <h1 className="about__info__heading"> Dev tools</h1>
-           
-           {/*  <PText>Agiles, Scrum</PText> 
-            </div>
-          </div>
-        </div>
-      </div>
-      <ContactBanner/>
-    </AboutPageStyles>
-  )
-} */

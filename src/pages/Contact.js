@@ -11,9 +11,13 @@ export default function Contact() {
   color: ${(props) =>
       props.theme.text
     }; }
-  padding: 10rem 0;
+  margin: auto;
+  padding: 110px;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
+  p{
+    font-size: 16px;
+  }
    a {
       display: inline-block;
       font-family: 'RobotoMono Regular';
@@ -21,17 +25,17 @@ export default function Contact() {
       color: ${(props) => props.theme.text};
       outline: none;
         }
-   p{
-    font-size: 1rem;
-   } 
    ul {
+        display:flex;
+        flex-direction: column;    
         border: solid 2px ${(props) => props.theme.secondary};
         justify-content: space-between;
         align-items:center;
-        width: fit-content;
+        margin: 20px;
+        padding:10px;
    }   
    li{
-      font-size: 1.5rem;
+      font-size: 16px;
       width: fit-content;
       padding: 15px;
       margin: 0 10px;
@@ -43,12 +47,14 @@ export default function Contact() {
       }
    } 
      @media only screen and (max-width: 768px) {
+      padding: 95px 0;
+      margin: auto;;
   p{
-    font-size: 1rem;
+    font-size: 16px;
    } 
       li{
-      font-size: 1rem;
-      padding: 1rem;
+      font-size: 16px;
+      padding: 10px
       margin: 0 10px;
       display: inline-block;
       border-radius: 8px;
@@ -60,7 +66,7 @@ export default function Contact() {
       a {
       display: inline-block;
       font-family: 'RobotoMono Regular';
-      font-size: 1rem;
+      font-size: 16px;
       color: ${(props) => props.theme.text};
       outline: none;
         }

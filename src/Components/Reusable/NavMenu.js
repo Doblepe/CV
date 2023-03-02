@@ -3,32 +3,36 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 import WhatsIcon from './whatsIcon'
+
 const NavStyles = styled.nav`
   position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
-  height: 8em;
-  padding: 1rem 0;
+  height: 100px;
+  padding: 15px 15px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
   background-color: ${(props) =>
     props.theme.bg_2
   };
+  margin : auto
   p{
     margin-left: 10px;
     color: ${(props) => props.theme.text};
     font-size: 1.5rem
   }
   ul {
-    align-items: center;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     max-width: 1200px;
     width: 90%;
     text-align: center;
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     border: solid 2px ${(props) => props.theme.secondary};
     li {
       margin: 0 10px;
@@ -46,13 +50,6 @@ const NavStyles = styled.nav`
       font-size: 1.5rem;
       color: ${(props) => props.theme.text};
       outline: none;
-    }
-    button{
-      margin-left: auto;
-      background-color:  #BCB4B4;
-    }
-    .active {
-      color: ${(props) => props.theme.text};
     }
   }
   .mobile-menu-icon {
@@ -76,25 +73,17 @@ const NavStyles = styled.nav`
     props.theme.bg_2}
     margin: auto;
     display:flex;
-  }
-  .container button{
-      font-family: 'RobotoMono Regular';
-      width: 5em;
-      border-radius: 20px;
-      padding: 1rem 2rem;
-      font-size: 2rem;
-      color: ${(props) => props.theme.text};
-      outline: none;
-     background-color: ${(props) => props.theme.secondary};
-      margin-left: 10em;
-      /* background-color:  #BCB4B4; */
-      margin-left: 5em;
-    }
+    flex-direction: row;
+    justify-content: space-between;
 
-    
-  @media only screen and (max-width: 768px) {
-    max-height: 20px;
+  }
+@media only screen and (max-width: 768px) {
+    max-height: 90px;
     padding: 0;
+    ul{
+      display:flex;
+      flex-direction: column;
+    }
     .hide-item {
       transform: translateY(calc(-100% - var(--top)));
     }
@@ -124,22 +113,36 @@ const NavStyles = styled.nav`
       }
       li {
         display: block;
-        margin-bottom: 1rem;
+        margin: 15px;
       }
     }
       p{
     margin-left: 10px;
     color: ${(props) => props.theme.text};
     font-size: 1rem
-  }
-    #chat_txt{
-      display: none
-    }
-    #theme-btn{
+  }}
+`;
+
+
+const ThemeBtnStyl = styled.div`
+button{
+    align-content: center;
+      font-family: 'RobotoMono Regular';
+      border-radius: 40px;
+      padding: 15px;
+      margin: auto 30px;
+      font-size: 15px;
+      color: ${(props) => props.theme.text};
+      outline: none;
+      background-color: ${(props) => props.theme.secondary};
+}
+  @media only screen and (max-width: 768px) {
+     #theme-btn{
       display:none
     }
   }
-`;
+`
+
 
 export default function NavMenu(props) {
   const [showNav, setShowNav] = useState(false);
@@ -212,10 +215,11 @@ export default function NavMenu(props) {
           </NavLink>
         </li>  
       </ul>
-        <WhatsIcon className={!showNav ? 'navItems hide-item' : 'navItems'} />
-        <p id="chat_txt">Chat with me!</p>
-        <button id="theme-btn" onClick={() => { props.themeToggler() }}>Theme</button>  
-     
+          <WhatsIcon className={!showNav ? 'navItems hide-item' : 'navItems'} />
+          <ThemeBtnStyl>
+            <button id="theme-btn" onClick={() => { props.themeToggler() }}>Theme</button>
+          </ThemeBtnStyl>
+
       </div>
     </NavStyles>
   );
