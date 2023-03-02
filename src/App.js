@@ -6,7 +6,7 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import NavMenu from './Components/Reusable/NavMenu';
 import Footer from './Components/Reusable/Footer';
-import BackToTop from './Components/Reusable/BackToTop'
+//import BackToTop from './Components/Reusable/BackToTop'
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './styles/Theme';
 import GlobalStyles from './styles/GlobalStyle';
@@ -21,7 +21,7 @@ function App() {
   return (
     <ThemeProvider theme={theme === "dark" ? lightTheme : darkTheme}>
       <GlobalStyles />
-      <BackToTop />
+      {/* <BackToTop /> */}
       <Router>
         <NavMenu themeToggler={themeToggler} />
         <Routes>

@@ -271,9 +271,11 @@ const AboutPageStyles = styled.div`
    p {
     font-size: 1.2rem
    }
-    .about__info__items {
+  .about__info__items {
     margin-top: 30px;
-
+    background-color: none;
+    border: none;
+    padding: none;
   }
   .about__info__heading {
       font-size: 2.5rem,;

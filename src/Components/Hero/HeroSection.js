@@ -1,7 +1,6 @@
 import React from 'react'
 import Videobg from '../../assets/images/video.mp4'
 import styled from 'styled-components'
-import Typical from 'react-typical';
 import { Link } from 'react-router-dom'
 import CoolButton from '../Reusable/CoolButton';
 function HeroSection() {
@@ -50,6 +49,10 @@ z-index: 1;
   align-items: center;
   color: white;
 }
+h1 {
+  padding: 20px; 
+  margin: auto;
+}
 @media only screen and (max-width: 768px) {
     .HeroContent {
      width: 80%;
@@ -65,14 +68,9 @@ z-index: 1;
           <video className='VideoBg' autoPlay loop muted src={Videobg} type='video/mp4' ></video>
         </div>
         <div className='HeroContent'>
-          <h1>
-            {""}
-            <Typical
-              steps={['Hello World!🌎⚡', 1000, 'Are you looking for the best JR Developer?👀 ', 1000, `You're on the right place!😏👌`, 1000]}
-              loop={Infinity}
-              wrapper="p"
-            />
-          </h1>
+
+          <h1>Are you looking for the best JR Developer? ...  👀 </h1>
+          <h1>You're on the right place! 😏👌</h1>
           <CoolButton as={Link} to="/contact" />
         </div>
       </div>
