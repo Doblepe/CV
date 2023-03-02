@@ -56,7 +56,7 @@ const NavStyles = styled.nav`
     position: absolute;
     color: ${(props) => props.theme.secondary};
     right: 1rem;
-    top: 2rem;
+    top: 1rem;
     width: 4rem;
     cursor: pointer;
     display: none;

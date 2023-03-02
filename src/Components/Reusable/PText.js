@@ -10,7 +10,7 @@ const PStyle = styled.div`
     font-size: 1.5rem;
   }
   @media only screen and (max-width: 460px) {
-
+    font-size: 1.2rem
   }
 `;
 

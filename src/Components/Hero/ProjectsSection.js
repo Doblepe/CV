@@ -50,6 +50,7 @@ const ProjectSectionStyle = styled.div`
   object-fit: cover;
 }
   @media only screen and (max-width: 768px) {
+    
     }
   }
 `;
@@ -70,8 +71,8 @@ export default function ProjectsSection() {
           modules={[Pagination]}
           className="mySwiper"
         >
-          {projects.map((project) => {
-          
+          {projects.map((project, index) => {
+
             return (
               <SwiperSlide>
                 <ProjectItem

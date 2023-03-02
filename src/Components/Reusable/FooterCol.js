@@ -12,7 +12,7 @@ const ColStyle = styled.div`
     margin-bottom: 1rem;
   }
   a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color:${(props) =>
     props.theme.text
   };

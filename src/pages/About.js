@@ -118,6 +118,7 @@ const AboutPageStyles = styled.div`
     gap: 1rem;
     padding:1rem 
   }
+
   .fav_box{
     display:flex;
     flex-direction: row;
@@ -199,11 +200,12 @@ const AboutPageStyles = styled.div`
      img{
       max-height:390px;    }
   }
-    .icons_box{
-    display: flex;
-    flex-wrap: wrap;
+  .icons_box{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around
     gap: 1rem;
-    padding: 1rem;
+    padding:1rem 
   }
   .experience_box{
     display: flex;
@@ -267,15 +269,26 @@ const AboutPageStyles = styled.div`
   @media only screen and (max-width: 450px) {
     padding: 120px 0;
    p {
-    padding:10px;
     font-size: 1.2rem
    }
+    .about__info__items {
+    margin-top: 30px;
+
+  }
   .about__info__heading {
       font-size: 2.5rem,;
        text-align:center;
     }
      .about__info__item i{
    font-size: 3.5rem;
+  }
+    .icons_box{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around
+    gap: 1rem;
+    padding:1rem 
+    box-sizing: border-box;
   }
     h3 {
   font-size: 2rem;
