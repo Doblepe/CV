@@ -13,7 +13,7 @@ const AboutPageStyles = styled.div`
   color: ${(props) =>
     props.theme.text
   };
-  padding: 80px 0;
+  padding: 120px 0;
   font-size: 16px;
   line-height: 1.3em;
   font-family: 'Raleway', sans-serif;
@@ -95,7 +95,6 @@ const AboutPageStyles = styled.div`
   border-bottom: 2px solid ${(props) =>
     props.theme.secondary
   };
-  
   }
    h3 {
   font-size: 2.4rem;
@@ -145,6 +144,7 @@ const AboutPageStyles = styled.div`
   p {
     padding:10px;
     font-size: 1.8rem
+    line-height: 1.5;
    }
    @media only screen and (max-width: 1100px) {
     padding: 125px 0;
@@ -268,7 +268,7 @@ const AboutPageStyles = styled.div`
     padding: 120px 0;
    p {
     padding:10px;
-    font-size: 1.5rem
+    font-size: 1.2rem
    }
   .about__info__heading {
       font-size: 2.5rem,;

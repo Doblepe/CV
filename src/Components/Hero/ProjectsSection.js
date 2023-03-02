@@ -43,7 +43,6 @@ const ProjectSectionStyle = styled.div`
   -webkit-align-items: center;
   align-items: center;
 }
-
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -71,8 +70,8 @@ export default function ProjectsSection() {
           modules={[Pagination]}
           className="mySwiper"
         >
-          {projects.map((project, index) => {
-            if (index >= 5) return null;
+          {projects.map((project) => {
+          
             return (
               <SwiperSlide>
                 <ProjectItem
