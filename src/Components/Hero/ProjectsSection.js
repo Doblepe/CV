@@ -50,9 +50,12 @@ const ProjectSectionStyle = styled.div`
   object-fit: cover;
 }
   @media only screen and (max-width: 768px) {
-    
+.swiper {
+  width: 100%;
+  height: 100%;
+}
     }
-  }
+  
 `;
 
 export default function ProjectsSection() {
