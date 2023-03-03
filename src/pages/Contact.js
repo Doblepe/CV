@@ -21,7 +21,7 @@ export default function Contact() {
    a {
       display: inline-block;
       font-family: 'RobotoMono Regular';
-      font-size: 1rem;
+      font-size: 16px;
       color: ${(props) => props.theme.text};
       outline: none;
         }

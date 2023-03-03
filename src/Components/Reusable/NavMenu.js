@@ -55,8 +55,8 @@ const NavStyles = styled.nav`
   .mobile-menu-icon {
     position: absolute;
     color: ${(props) => props.theme.secondary};
-    right: 1rem;
-    top: 1rem;
+    right: 2rem;
+    top: 1.5rem;
     width: 4rem;
     cursor: pointer;
     display: none;
@@ -78,7 +78,7 @@ const NavStyles = styled.nav`
 
   }
 @media only screen and (max-width: 768px) {
-    max-height: 90px;
+    max-height: 70px;
     padding: 0;
     ul{
       display:flex;

@@ -2,10 +2,12 @@
 export const lightTheme = {
     name: "light",
     text: "black",
-    bg: "#CAF0F8",
-    bg_2: "#EFFFFD",
-    secondary: "#00B4D8"
+    bg: "#89a7b1",
+    bg_2: "#cbdad5",
+    secondary: "white"
 };
+
+
 
 export const darkTheme = {
     name: "dark",
