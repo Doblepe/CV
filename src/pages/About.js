@@ -370,8 +370,8 @@ export default function About(props) {
             <div className="about__info__item">
               <h1 className="about__info__heading">Experience</h1>
               <div className="experience_box">
-                <p>- On the IT world, my first job was coding REACT && PHP at <a href="http://jamenet.eus/" rel='noreferrer' target='_blank'>Jamenet Sollutions</a> for three monts. There I worked using the Scrum methodology and I've learned JIRA.</p>
                 <p>- Since june of 2022 i'm coding with Bilbomática and The WhiteTeam developing this app <a href="https://www.geo.euskadi.eus/geobisorea" rel='noreferrer' target='_blank'> ( -- Visor Geoeuskadi --)</a>. It is made with Javascript and some GIS libraries such as Esri && ArcGis. My task are fixing and optimizing the code and developing new features. </p>
+                <p>- On the IT world, my first job was coding REACT && PHP at <a href="http://jamenet.eus/" rel='noreferrer' target='_blank'>Jamenet Sollutions</a> for three monts. There I worked using the Scrum methodology and I've learned JIRA.</p>
                 <p>- Beside that, I've worked on many different jobs, such as a Journalist, as a comercial, as administrative and also as a Lifeguard. Those jobs let me gain so many soft skills like efficient comunication, emotional intelligence and team working. </p>
               </div>
             </div>
