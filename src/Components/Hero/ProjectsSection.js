@@ -18,8 +18,8 @@ const ProjectSectionStyle = styled.div`
   };;
   padding: 10rem 0;
   .swiper {
-  width: 100%;
-  height: 100%;
+  width: 45%;
+  height: auto;
   background-color: ${(props) =>
     props.theme.bg_2
   };

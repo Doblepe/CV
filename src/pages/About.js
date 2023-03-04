@@ -1,7 +1,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import PText from '../Components/Reusable/PText';
+//import PText from '../Components/Reusable/PText';
 import Map from '../Components/About/Map';
 import AboutImg from '../assets/images/about_pic.jpg';
 import ContactBanner from '../Components/Contact/ContactBanner';
@@ -57,6 +57,12 @@ const AboutPageStyles = styled.div`
     line-height: 1.3em;
   }
   .about__info {
+    background-color: ${(props) =>
+    props.theme.bg_2
+  };
+    border: solid 2px ${(props) =>
+    props.theme.secondary
+  };
     margin-bottom: 4rem;
     .para {
       max-width: 100%;
@@ -83,13 +89,17 @@ const AboutPageStyles = styled.div`
   }
   .about__info__item i{
    font-size: 5rem;
+    color: ${(props) =>
+    props.theme.icons
+  };
+
   };
   .about__info__heading {
   text-transform: uppercase;  
   font-size: 2.6rem;
   padding: 10px 0 10px 0px;
   color: ${(props) =>
-    props.theme.secondary
+    props.theme.text
   };
    text-align:center;
   border-bottom: 2px solid ${(props) =>
@@ -130,7 +140,10 @@ const AboutPageStyles = styled.div`
    display: flex;
    flex-direction: column;
    border: solid 2px ${(props) =>
-    props.theme.secondary
+    props.theme.bg
+  };
+  background-color: ${(props) =>
+    props.theme.bg
   };
   margin-top:16px;
   padding: 10px 0;
@@ -191,7 +204,7 @@ const AboutPageStyles = styled.div`
 
 }
   @media only screen and (max-width: 768px) {
-   padding: 120px 0;
+  padding: 120px 0;
   font-size: 16px;
   line-height: 1.3em;
       .right {
@@ -271,6 +284,9 @@ const AboutPageStyles = styled.div`
    p {
     font-size: 1.2rem
    }
+   .container{
+    width: 100%
+   }
   .about__info__items {
     margin-top: 30px;
     background-color: none;
@@ -340,10 +356,9 @@ export default function About(props) {
               </p>
               <h2 className="about__heading">A Junior Full Stack Developer</h2>
               <div className="about__info">
-                <PText>
+                <p>
                   My name is Víctor and after the becoming of the covid-19 pandemy I decided to change my professional career. I've worked in different jobs, but I couldn't find that one which would fit in with my vital objectives until I found the wonderful world of programming.  Digital projects and programming have changed my perspective of life, so I am looking for new profesional opportunities in the Web Development universe.
-                  <br />
-                </PText>
+                </p>
               </div>
               {/*  <Button btnText="Download CV" btnLink="#" /> */}
             </div>
@@ -353,14 +368,13 @@ export default function About(props) {
           </div>
           <div className="about__info__items">
             <div className="about__info__item">
-              <h1 className="about__info__heading">Education</h1>
-              <p>- I've studied Jornalism at the UPV/EHU and also a Master degree on Multimedia Journalism.</p>
-              <p>- JavaScript Full Stack Developer course on <a href="https://www.linkedin.com/school/code4jobsbbkbootcamp/" rel='noreferrer' target='_blank'>BBK Bootcamp.</a></p>
-              <p>- Desarrollo de aplicaciones con Angular on <a href="https://www.linkedin.com/company/ipartek/" rel='noreferrer' target='_blank'> Ipartek.</a></p>
-              <p>-  Developing C# and .NET course on <a href='https://www.linkedin.com/search/results/all/?keywords=C2B%20-%20Campus%20To%20Business&sid=zVd' rel='noreferrer' target='_blank'>C2B - Camopus to buisness</a>.</p>
-              <p>- Also learning Máster de Programación Avanzada en Python para Big Data, Hacking y Machine Learning with <a href='https://www.linkedin.com/school/eip-international-business-school/' rel='noreferrer' target='_blank'>EIP International Business School</a>.</p>
+              <h1 className="about__info__heading">Experience</h1>
+              <div className="experience_box">
+                <p>- On the IT world, my first job was coding REACT && PHP at <a href="http://jamenet.eus/" rel='noreferrer' target='_blank'>Jamenet Sollutions</a> for three monts. There I worked using the Scrum methodology and I've learned JIRA.</p>
+                <p>- Since june of 2022 i'm coding with Bilbomática and The WhiteTeam developing this app <a href="https://www.geo.euskadi.eus/geobisorea" rel='noreferrer' target='_blank'> ( -- Visor Geoeuskadi --)</a>. It is made with Javascript and some GIS libraries such as Esri && ArcGis. My task are fixing and optimizing the code and developing new features. </p>
+                <p>- Beside that, I've worked on many different jobs, such as a Journalist, as a comercial, as administrative and also as a Lifeguard. Those jobs let me gain so many soft skills like efficient comunication, emotional intelligence and team working. </p>
+              </div>
             </div>
-
             <div className="about__info__item">
               <h1 className="about__info__heading">My Skills</h1>
               <p>I've worked with so many languages and frameworks, ask me about wich one you are interested</p>
@@ -458,7 +472,7 @@ export default function About(props) {
                   <p>Linux</p>
                 </article>
               </div>
-              <h2 >My favs: </h2>
+              <h3 >My favs: </h3>
               <div className="fav_box">
               <article className='skills_article'>
                 <i class="devicon-javascript-plain"></i>
@@ -470,13 +484,13 @@ export default function About(props) {
               </article>
               </div>
             </div>
-              <div className="about__info__item">
-              <h1 className="about__info__heading">Experience</h1>
-              <div className="experience_box">
-                <p>- On the IT world I worked for three months coding REACT && PHP at <a href="http://jamenet.eus/" rel='noreferrer' target='_blank'>Jamenet Sollutions.</a></p>
-                <p>- Since june of 2022 i'm coding with JS with Bilbomática and The WhiteTeam developing this app <a href="https://www.geo.euskadi.eus/geobisorea" rel='noreferrer' target='_blank'> Visor Geoeuskadi</a> </p>
-                <p>- I've worked on many different jobs, such as a Journalist, as a comercial, as administrative and also as a Lifeguard. Thath jobs let me gain so many soft skills like efficient comunication, emotional intelligence and team working. </p>
-              </div>
+            <div className="about__info__item">
+              <h1 className="about__info__heading">Education</h1>
+              <p>- I've studied Jornalism at the UPV/EHU and also a Master degree on Multimedia Journalism.</p>
+              <p>- JavaScript Full Stack Developer course on <a href="https://www.linkedin.com/school/code4jobsbbkbootcamp/" rel='noreferrer' target='_blank'>BBK Bootcamp.</a></p>
+              <p>- Desarrollo de aplicaciones con Angular on <a href="https://www.linkedin.com/company/ipartek/" rel='noreferrer' target='_blank'> Ipartek.</a></p>
+              <p>-  Developing C# and .NET course on <a href='https://www.linkedin.com/search/results/all/?keywords=C2B%20-%20Campus%20To%20Business&sid=zVd' rel='noreferrer' target='_blank'>C2B - Camopus to buisness</a>.</p>
+              <p>- Also learning Máster de Programación Avanzada en Python para Big Data, Hacking y Machine Learning with  <a href='https://www.linkedin.com/school/eip-international-business-school/' rel='noreferrer' target='_blank'>EIP International Business School</a>.</p>
             </div>
           </div>
           <Map />
